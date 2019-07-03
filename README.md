@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/Krisell/redirect-www-middleware.svg?branch=master)](https://travis-ci.org/Krisell/redirect-www-middleware)
 # Redirect WWW Middleware for Laravel
 Provides a middleware which redirects all requests made to the www subdomain to the main domain. If possible, perform the redirect before the request hits your appliction instead of using this middleware (e.g. in Nginx, Apache or IIS config).
 
