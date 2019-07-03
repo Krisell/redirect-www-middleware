@@ -1,0 +1,27 @@
+{
+    "name": "krisell/redirect-www-middleware",
+    "description": "Redirects all requests using www to non www.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Krisell",
+            "email": "martin.krisell@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Krisell\\RedirectWWWMiddleware\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Krisell\\RedirectWWWMiddleware\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.2",
+        "orchestra/testbench": "^3.5"
+    }
+}
