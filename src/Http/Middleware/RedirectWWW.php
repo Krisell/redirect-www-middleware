@@ -17,7 +17,7 @@ class RedirectWWW
      */
     public function handle($request, Closure $next)
     {
-        if (starts_with($request->header('host'), 'www.')) {
+        if (substr($request->header('host'), 0, 4) === 'www.') {
             $host = str_replace('www.', '', $request->header('host'));
             $request->headers->set('host', $host);
 
